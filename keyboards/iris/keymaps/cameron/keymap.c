@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      F12 , F1 , F2 , F3 , F4 , F5 ,                F6 , F7 , F8 , F9 ,F10 ,F11 ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     TILD,GRV,    ,MINS,EQL ,    ,               LBRC,RBRC,MINS,EQL ,PIPE,BSLS,
+     TILD,GRV ,    ,MINS,EQL ,    ,               LBRC,RBRC,EQL ,    ,PIPE,BSLS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      LCTL,    ,HOME,PGUP,PGDN,END ,               LEFT,DOWN, UP ,RGHT,    ,    ,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
