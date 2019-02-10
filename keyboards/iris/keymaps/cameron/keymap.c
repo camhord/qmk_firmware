@@ -29,6 +29,8 @@ enum custom_keycodes {
 #define KC_RSAD RGB_SAD
 #define KC_RVAI RGB_VAI
 #define KC_RVAD RGB_VAD
+#define KC_RSPI RGB_SPI
+#define KC_RSPD RGB_SPD
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -52,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      TILD,GRV ,    ,MINS,EQL ,    ,               LBRC,RBRC,EQL ,    ,PIPE,BSLS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-         ,RHUI,HOME,PGUP,PGDN,END ,               LEFT,DOWN, UP ,RGHT,    ,    ,
+         ,RHUI,HOME,PGUP,PGDN,END ,               LEFT,DOWN, UP ,RGHT,RVAD,RVAI,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
          ,RMOD,INS ,NLCK,SLCK,PSCR,RTOG,         ,MPLY,MPRV,MNXT,VOLD,VOLU,ENT ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
@@ -62,15 +64,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
   [_RAISE] = LAYOUT_kc( // UNUSED
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-     F12 , F1 , F2 , F3 , F4 , F5 ,                F6 , F7 , F8 , F9 ,F10 ,F11 ,
+         ,    ,    ,    ,    ,    ,                   ,    ,    ,    ,    ,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     INS ,    ,    ,MINS,LCBR,LBRC,               RBRC,RCBR,INS ,NLCK,SLCK,MUTE,
+         ,    ,    ,    ,    ,    ,                   ,    ,    ,    ,    ,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-         ,LPRN,HOME,PGUP,PGDN,END ,               LEFT,DOWN, UP ,RGHT,RPRN,VOLU,
+         ,    ,    ,    ,    ,    ,               RMOD,RHUI,RSAI,RVAI,RSPI,    ,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     RTOG,RMOD,RHUI,    ,    ,    ,    ,         ,RPRN,MPLY,MPRV,MNXT,    ,VOLD,
+         ,    ,    ,    ,    ,    ,    ,         ,    ,RHUD,RSAD,RVAD,RSPD,    ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                           ,    , DEL ,        BSPC ,    ,
+                           ,    ,     ,            ,    ,
   //                  `----+----+----'        `----+----+----'
   )
 };
