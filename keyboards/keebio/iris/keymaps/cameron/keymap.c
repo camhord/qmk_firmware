@@ -31,6 +31,7 @@ enum custom_keycodes {
 #define KC_RVAD RGB_VAD
 #define KC_RSPI RGB_SPI
 #define KC_RSPD RGB_SPD
+#define KC_VLKT VLK_TOG
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -56,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
          ,RHUI,HOME,PGUP,PGDN,END ,               LEFT,DOWN, UP ,RGHT,RVAD,RVAI,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-         ,RMOD,INS ,NLCK,SLCK,PSCR,RTOG,         ,MPLY,MPRV,MNXT,VOLD,VOLU,ENT ,
+         ,RMOD,VLKT,INS ,SLCK,PSCR,RTOG,         ,MPLY,MPRV,MNXT,VOLD,VOLU,ENT ,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
                            ,    ,     ,            ,    ,     
   //                  `----+----+----'        `----+----+----'
