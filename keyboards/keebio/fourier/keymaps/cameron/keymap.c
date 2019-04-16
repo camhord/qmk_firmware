@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  //|-----`----`----`----`----`----|----`----`----`----`----`--------|
     LSFT   , Z  , X  , C  , V  , B  , N  , M  ,COMM,DOT ,SLSH,SFTENTR,
  //|-------`----`----`----`----`----|----`----`----`----`----`------|
-    LCTL ,LALT,  FN2,   ,  LSFT   ,  SPFN1 , FN1 , RALT, RGUI ,ENTER
+    LCTL ,LALT,  FN2,   ,  FN1   ,  SPACE  , FN1 , RALT, RGUI ,ENTER
  //`-----+----+-----+-------------|--------+-----+-----+-----+------'
   ),
 
