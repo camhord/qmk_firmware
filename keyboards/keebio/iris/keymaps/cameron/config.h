@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Use I2C or Serial, not both */
 
 #undef PRODUCT
-#define PRODUCT TeleDildonics Suck-Master 2000™
+#define PRODUCT TeleDildonics® Suck-Master 2000™
 
 #define USE_SERIAL
 // #define USE_I2C
