@@ -19,6 +19,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Use I2C or Serial, not both */
 
+#undef PRODUCT
+#define PRODUCT TeleDildonics Suck-Master 2000™
+
 #define USE_SERIAL
 // #define USE_I2C
 
@@ -31,7 +34,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #undef RGBLED_NUM
 #define RGBLIGHT_ANIMATIONS
 #define RGBLED_NUM 34
-#define RGBLIGHT_HUE_STEP 8
-#define RGBLIGHT_SAT_STEP 8
-#define RGBLIGHT_VAL_STEP 8
+#define RGBLIGHT_HUE_STEP 16
+#define RGBLIGHT_SAT_STEP 16
+#define RGBLIGHT_VAL_STEP 16
 #define RGBLIGHT_SLEEP
