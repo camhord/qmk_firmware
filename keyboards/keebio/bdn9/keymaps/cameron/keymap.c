@@ -15,27 +15,29 @@
  */
 #include QMK_KEYBOARD_H
 
+#define KC_RTOG RGB_TOG
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
-        HYPR(KC_4),HYPR(KC_5),HYPR(KC_6), \
-        HYPR(KC_1),HYPR(KC_2),HYPR(KC_3), \
-        KC_MPRV, KC_MPLY, KC_MNXT \
+        MEH(KC_MUTE),KC_RTOG     ,MEH(KC_HOME), \
+        MEH(KC_1)   ,MEH(KC_2)   ,MEH(KC_3), 	\
+        KC_MPRV     ,KC_MPLY     ,KC_MNXT 		\
     ),
 };
 
 void encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) {
         if (clockwise) {
-            tap_code(MOD_MEH | KC_FN9);
+            tap_code(KC_VOLD);
         } else {
-            tap_code(MOD_MEH | KC_FN10);
+            tap_code(KC_VOLU);
         }
     }
     else if (index == 1) {
         if (clockwise) {
-            tap_code(MOD_MEH | KC_FN11);
+            tap_code(MOD_LGUI | KC_PGDN);
         } else {
-            tap_code(MOD_MEH | KC_FN12);
+            tap_code(MOD_LGUI | KC_PGUP);
         }
     }
 }
