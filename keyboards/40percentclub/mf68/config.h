@@ -31,6 +31,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 9
 
+#define OLED_SCROLL_TIMEOUT 30000
+
 /*
  * Keyboard Matrix Assignments
  *
@@ -42,7 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
 */
 #define MATRIX_ROW_PINS { B6, B2, B3, B1, F7, F6, F5, F4 }
-#define MATRIX_COL_PINS { D3, D2, D1, D0, D4, C6, D7, E6, B4 }
+#define MATRIX_COL_PINS { D3, D2, D5, B7, D4, C6, D7, E6, B4 }
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
@@ -52,27 +54,27 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define BACKLIGHT_BREATHING
 #define BACKLIGHT_LEVELS 3
 
-// #define RGB_DI_PIN E2
-// #ifdef RGB_DI_PIN
-//   #define RGBLED_NUM 16
-//   #define RGBLIGHT_HUE_STEP 8
-//   #define RGBLIGHT_SAT_STEP 8
-//   #define RGBLIGHT_VAL_STEP 8
-//   #define RGBLIGHT_LIMIT_VAL 255 /* The maximum brightness level */
-//   #define RGBLIGHT_SLEEP  /* If defined, the RGB lighting will be switched off when the host goes to sleep */
-// /*== all animations enable ==*/
-//   #define RGBLIGHT_ANIMATIONS
-// /*== or choose animations ==*/
-//   #define RGBLIGHT_EFFECT_BREATHING
-//   #define RGBLIGHT_EFFECT_RAINBOW_MOOD
-//   #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
-//   #define RGBLIGHT_EFFECT_SNAKE
-//   #define RGBLIGHT_EFFECT_KNIGHT
-//   #define RGBLIGHT_EFFECT_CHRISTMAS
-//   #define RGBLIGHT_EFFECT_STATIC_GRADIENT
-//   #define RGBLIGHT_EFFECT_RGB_TEST
-//   #define RGBLIGHT_EFFECT_ALTERNATING
-// #endif
+ #define RGB_DI_PIN F0
+ #ifdef RGB_DI_PIN
+   #define RGBLED_NUM 18
+   #define RGBLIGHT_HUE_STEP 8
+   #define RGBLIGHT_SAT_STEP 8
+   #define RGBLIGHT_VAL_STEP 8
+   #define RGBLIGHT_LIMIT_VAL 255 /* The maximum brightness level */
+   #define RGBLIGHT_SLEEP  /* If defined, the RGB lighting will be switched off when the host goes to sleep */
+ /*== all animations enable ==*/
+   #define RGBLIGHT_ANIMATIONS
+ /*== or choose animations ==*/
+   #define RGBLIGHT_EFFECT_BREATHING
+   #define RGBLIGHT_EFFECT_RAINBOW_MOOD
+   #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+   #define RGBLIGHT_EFFECT_SNAKE
+   #define RGBLIGHT_EFFECT_KNIGHT
+   #define RGBLIGHT_EFFECT_CHRISTMAS
+   #define RGBLIGHT_EFFECT_STATIC_GRADIENT
+   #define RGBLIGHT_EFFECT_RGB_TEST
+   #define RGBLIGHT_EFFECT_ALTERNATING
+ #endif
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
